@@ -1,9 +1,12 @@
 .App {
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* background: linear-gradient(to bottom, #E60023 , #EFEFEF); */
   background: #EFEFEF;
+  /* background: #E60023; */
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
   /* min-width: 100vw; */
 }
 
@@ -40,6 +43,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App .skills-section {
+  text-align: center;
+  padding: 20px;
+  display: flex; /* Flex container for centering */
+  justify-content: center; /* Center the child elements */
+}
+
+.App .skills-section .skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  justify-content: center;
+}
+
+.App .skills-section .skills-column {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 40px;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
 }
 
 /* 

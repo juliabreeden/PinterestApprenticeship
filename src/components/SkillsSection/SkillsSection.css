@@ -1,0 +1,48 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.skills-grid svg {
+    height: 60px;
+    width: 60px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-label {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.last-row {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content (if needed) */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        gap: 15px;
+    }
+
+    .skills-grid svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .skill-label {
+        font-size: 0.8em; /* Smaller text on mobile */
+    }
+}
