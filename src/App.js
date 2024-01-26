@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import ProjectDetails from './components/Projects/ProjectDetails';
+import WhyMe from './components/WhyMe/WhyMe';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <Intro />
               <AboutMe />
               <Projects />
+              <WhyMe/>
             </>
           } />
           <Route path="/project-details" element={<ProjectDetails />} />
@@ -43,4 +45,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,6 +1,11 @@
-/* .App {
+.App {
   text-align: center;
-} */
+  min-height: 100vh;
+  /* background: linear-gradient(to bottom, #E60023 , #EFEFEF); */
+  background: #EFEFEF;
+  font-family: Helvetica;
+  /* min-width: 100vw; */
+}
 
 .App-logo {
   height: 40vmin;
