@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useNavigate, useLocation } from 'react-router-dom';
 import "./Projects.css";
 import { useEffect } from 'react';
@@ -67,7 +67,5 @@ const ProjectDetails = () => {
     
     
 };
-
-
 
 export default ProjectDetails;

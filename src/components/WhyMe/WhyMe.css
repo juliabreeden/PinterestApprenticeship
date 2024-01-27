@@ -44,9 +44,10 @@
     width: 80%; /* Adjust based on preference */
     margin: 20px;
     padding: 10px;
-    background-color: #fff; /* Background for each item */
+    color: #f0f0f0;
+    background-color: #E60023; 
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 10px;
 }
 
 .reason-item.left {
