@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SkillsSection from './components/SkillsSection/SkillsSection';
 import TechTalk from './components/TechTalk/TechTalk';
 import ClosingSection from './components/ClosingSection/ClosingSection';
-import FunnyForm from './components/FunnyForm/FunnyForm';
+
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(false);
