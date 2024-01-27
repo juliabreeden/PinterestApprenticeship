@@ -1,0 +1,79 @@
+.tech-talk-section {
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tech-talk-header {
+    margin-bottom: 30px;
+}
+
+.tech-talk-header h2 {
+    color: #E60023; /* Eye-catching color for the heading */
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.tech-talk-content {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.tech-talk-section {
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tech-talk-header {
+    margin-bottom: 30px;
+}
+
+.tech-talk-header h2 {
+    color: #E60023; /* Eye-catching color for the heading */
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.tech-talk-content {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.tech-talk-link {
+    display: inline-block;
+    background-color: transparent; /* Clear background */
+    color: #E60023; /* Matching the heading color for consistency */
+    border: 2px solid #E60023; /* Thin border */
+    padding: 8px 15px; /* Reduced padding for a slimmer look */
+    border-radius: 3px; /* Slightly rounded corners */
+    text-decoration: none;
+    font-weight: bold; /* Bold text for emphasis */
+    transition: all 0.3s ease;
+}
+
+.tech-talk-link:hover {
+    background-color: #E60023;
+    color: white; /* Text color change on hover */
+    text-decoration: none; /* Ensure no underline appears */
+}
+
+
+@media (max-width: 768px) {
+    .tech-talk-header h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tech-talk-header h2 {
+        font-size: 1.8em;
+    }
+}

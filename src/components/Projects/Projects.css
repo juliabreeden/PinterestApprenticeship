@@ -1,41 +1,171 @@
+
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust size as needed */
-    grid-gap: 20px; /* Space between boxes */
-    padding: 20px;
-    justify-content: center; /* Center grid items horizontally */
-    align-items: start; /* Align grid items to the start vertically */
-    width: 100%; /* Take up full container width */
+    display: flex;
+    justify-content: center; /* Center items in the container */
+    align-items: center;
+    width: 100%;
+    padding: 40px; /* Add padding to the sides */
+    overflow-x: auto; 
+    box-sizing: border-box; /* Include padding in the width calculation */
+    /* height: 100vh; */
+
 }
+.projects-heading {
 
-.back-button {
-    padding: 10px 15px;
-    margin: 10px 0;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    cursor: pointer;
+    text-align: center;
+    color: #333; /* Adjust color as needed */
+    padding-top: 70px; /* Space above the heading */
 }
-
-/* Additional styling */
-
-
 .project-box {
-    height: 250px;
-    background-size: cover;
-    transition: transform 0.3s ease;
-    position: relative;
-    cursor: pointer;
+
+    flex: 0 0 240px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    display: flex; 
+
+    flex: 0 0 240px; 
+    height: 300px; 
+    overflow: hidden; 
+
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* margin-top: 20px; */
+}
+
+.project-box:last-child {
+    margin-right: 0; /* Remove margin for the last item */
 }
 
 .project-box:hover {
-    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: scale(1.05); 
+    cursor: pointer; /* change cursor to pointer */
+    
 }
 
+
+
 .project-info {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
-    padding: 10px;
+    padding: 10px; 
 }
+
+.project-info h3 {
+    margin-top: 0; 
+}
+
+
+
+
+.preview-image {
+    max-width: 100%;
+    height: 140px; 
+}
+
+
+
+.project-info h3 {
+    font-size: 1.4em; 
+    color: #333;
+    margin-top: 15px; 
+    margin-bottom: 10px; 
+}
+
+.project-info p {
+    font-size: 1em; /* Slightly larger text for summary */
+    color: #555; /* Slightly lighter text color for summary */
+    padding: 0 15px; /* Padding on sides for text */
+}
+
+
+
+
+
+.project-images.single-image {
+    display: flex;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center; /* Vertically center the child elements */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.project-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.project-text {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.project-text h2 {
+    font-size: 1.5em;
+    color: #E60023
+}
+
+.project-text p {
+    font-size: 1em;
+    color: #333;
+}
+
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    background: none; /* Removes the default button background */
+    border: none; /* Removes the default border */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Adjust as needed */
+    font-weight: bold; /* Makes text bold */
+    text-decoration: underline; /* Underlines the text */
+    font-size: 1em; 
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px;
+}
+
+button:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .project-box {
+        width: 100%; 
+        margin-bottom: 20px; /* Add space between stacked boxes */
+        display: flex; /* Enable flex properties */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center text within each box */
+    }
+
+    .project-info h3, .project-info p {
+        font-size: smaller; /* Adjust font size */
+    }
+}
+
+

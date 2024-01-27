@@ -5,7 +5,12 @@ import NavBar from './components/NavBar/NavBar';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import ProjectDetails from './components/Projects/ProjectDetails';
+import WhyMe from './components/WhyMe/WhyMe';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SkillsSection from './components/SkillsSection/SkillsSection';
+import TechTalk from './components/TechTalk/TechTalk';
+import ClosingSection from './components/ClosingSection/ClosingSection';
+
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -29,9 +34,16 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Intro />
-              <AboutMe />
-              <Projects />
+        <Intro />
+        <AboutMe id="aboutMe"/>
+        <Projects id="projects"/>
+    <div className="section-separator"></div>
+              <WhyMe id="why-me"/>
+              <div className="section-separator"></div>
+              <SkillsSection/>
+              <div className="section-separator"></div>
+              <TechTalk/>
+              <ClosingSection/>
             </>
           } />
           <Route path="/project-details" element={<ProjectDetails />} />
@@ -43,4 +55,3 @@ function App() {
 }
 
 export default App;
-

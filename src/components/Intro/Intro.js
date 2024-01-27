@@ -1,6 +1,10 @@
+
+
+
+
+// Inside Intro.js
 import React, { useState, useEffect } from 'react';
 import './Intro.css';
-import eyeball from './eyeball.png'; 
 import { Link } from 'react-scroll';
 
 const Intro = () => {
@@ -27,8 +31,7 @@ const Intro = () => {
 
     return (
         <div className="intro-container">
-            <img src={eyeball} className="eyeball" alt="Eyeball" />
-            <div className="intro-text">
+                 <div className="intro-text">
                 Hello,
                 {showWorld && !showPinployee && <span> world</span>}
                 {!showWorld && !showPinployee && <span className="strike-through"> world</span>}
@@ -45,3 +48,5 @@ const Intro = () => {
 };
 
 export default Intro;
+
+

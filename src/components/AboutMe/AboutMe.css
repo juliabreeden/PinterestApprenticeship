@@ -1,3 +1,51 @@
+/* .aboutMe-container {
+    text-align: center;
+    padding-bottom: 80px;
+    background-color: #E60023;
+    height: 100vh;
+}
+
+.aboutMe-paragraph
+
+h2 {
+    padding-top: 25px;
+} */
+
 .aboutMe-container {
-    text-align: center; 
+    text-align: center;
+    padding-top: 50px;
+    background-color: #E60023;
+    color: #fff;
+    height: 100vh;
+}
+
+
+
+.aboutMe-paragraph {
+    max-width: 800px; 
+    margin: auto; 
+    font-size: 1.1em; 
+    line-height: 1.6; 
+}
+
+.aboutMe-paragraph h2 {
+    margin-bottom: 30px; 
+    font-size: 2em; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in-text {
+    opacity: 0; 
+    animation: fadeIn 3s ease-in-out forwards; 
+    animation-delay: 2s; 
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe-paragraph {
+        padding: 0 20px; 
+    }
 }

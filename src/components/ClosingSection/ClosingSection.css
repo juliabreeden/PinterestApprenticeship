@@ -1,0 +1,19 @@
+.closing-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #E60023;
+    color: #fff;
+}
+
+.closing-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.closing-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: auto;
+}

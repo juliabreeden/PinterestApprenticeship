@@ -1,11 +1,30 @@
+import React, { useState, useEffect } from 'react';
 import './AboutMe.css';
 
 const AboutMe = () => {
+    const [fadeIn, setFadeIn] = useState(false);
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setFadeIn(true);
+        }, 2000); 
+        return () => clearTimeout(timer);
+    }, []);
+
+
     return (
-        <div id="aboutMe" class="aboutMe-container">
-            <p>I'm Julia, an apsiring software engineer. Recent bootcamp graduate and proud self-learner prior to that.</p>
-            <p>How much personal info to put here? Technology has always interested me, particularly regarding the countless ways in which it's now shaping our day to day lives. In response to our ever-increasingly technological world, I found myself longing to contribute to it in a meaningful way. When I realized that being a software engineer was possible for someone like me, and not just a career for the "shy but brilliant hacker in his mom's basement" archetype, my love affair with coding was set in motion. </p>
-            <p>My interest in working in technology, particularly software, stems from my interest in bettering the lives of my fellow humans. Software is wildly entrenched in our day to day lives-- in some ways that benefit everyone, and in some ways that are ethically murky at best. So why shouldn't I set out to use technology as a way to create beauty and foster inspiration and imagination? </p>
+        <div id="aboutMe" className="aboutMe-container">
+            <div className="aboutMe-paragraph">
+                <h2>I'm so glad you're here! I'm Julia, </h2>
+                <p>a recent bootcamp graduate and a self-driven learner. I've always been intrigued by technology and how it's shaping our lives. Discovering that software engineering was accessible to individuals like me, rather than being confined to a stereotypical image portrayed in the media, ignited my journey from hobby coding to hopeful career engineer.</p>
+                <p>My passion for tech is driven by a desire to make a positive impact on people's lives. Technology is involved in everything today, often to accomplish remarkable things, but sometimes used in ways that are ethically-murky at best. I'm all about using it to bring beauty, inspiration, knowledge, and imagination into the world.</p>
+                <p>I really value being part of communities that prioritize creativity and positivity, just like Pinterest.</p>
+                <p>So, I've made this site to convince you to select me as a Pinterest Apprentice...
+                </p>
+                <p className={fadeIn ? "fade-in-text" : ""} style={{fontWeight: 'bold'}}>
+                Is it working yet?</p>
+            </div>
         </div>
     );
 };
