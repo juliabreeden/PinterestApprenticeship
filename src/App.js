@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SkillsSection from './components/SkillsSection/SkillsSection';
 import TechTalk from './components/TechTalk/TechTalk';
 import ClosingSection from './components/ClosingSection/ClosingSection';
+import FunnyForm from './components/FunnyForm/FunnyForm';
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -33,11 +34,14 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Intro />
-              <AboutMe />
-              <Projects />
-              <WhyMe/>
+        <Intro />
+        <AboutMe id="aboutMe"/>
+        <Projects id="projects"/>
+    <div className="section-separator"></div>
+              <WhyMe id="why-me"/>
+              <div className="section-separator"></div>
               <SkillsSection/>
+              <div className="section-separator"></div>
               <TechTalk/>
               <ClosingSection/>
             </>

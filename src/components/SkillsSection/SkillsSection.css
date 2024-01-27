@@ -1,48 +1,32 @@
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #E60023;
+    font-size: 2.5em;
+}
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* Keep the 4-column layout */
+    gap: 30px; /* Increased gap for more space */
     justify-content: center;
-    justify-items: center;
-    margin-top: 20px;
+    margin: auto; /* Center the grid */
+    padding: 0 50px; /* Horizontal padding */
 }
 
 .skills-grid svg {
-    height: 60px;
-    width: 60px;
+    height: 80px; /* Increase size for better visibility */
+    width: 80px;
 }
 
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.skill-label {
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-
-.last-row {
-    display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content (if needed) */
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-        gap: 15px;
+        gap: 20px;
     }
 
     .skills-grid svg {
-        height: 30px;
-        width: 30px;
-    }
-
-    .skill-label {
-        font-size: 0.8em; /* Smaller text on mobile */
+        height: 50px;
+        width: 50px;
     }
 }

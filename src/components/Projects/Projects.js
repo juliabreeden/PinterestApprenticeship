@@ -66,8 +66,9 @@ const projectData = [
 
     return (
         <>
-        <h2>My Projects</h2>
-        <div id="projects-section" className="projects-container">
+          <h2 className="projects-heading">My Projects</h2>
+          <div id="projects" 
+        className="projects-container">
             {projectData.map((project) => (
                 <div
                     key={project.id}

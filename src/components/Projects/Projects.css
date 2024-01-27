@@ -4,12 +4,18 @@
     justify-content: center; /* Center items in the container */
     align-items: center;
     width: 100%;
-    padding: 50px; /* Add padding to the sides */
+    padding: 40px; /* Add padding to the sides */
     overflow-x: auto; 
     box-sizing: border-box; /* Include padding in the width calculation */
-    height: 100vh;
-}
+    /* height: 100vh; */
 
+}
+.projects-heading {
+
+    text-align: center;
+    color: #333; /* Adjust color as needed */
+    padding-top: 70px; /* Space above the heading */
+}
 .project-box {
 
     flex: 0 0 240px; 

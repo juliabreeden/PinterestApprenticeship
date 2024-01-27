@@ -20,7 +20,7 @@ const ProjectDetails = () => {
     const goBack = () => {
         navigate('/');
         setTimeout(() => {
-            const projectsSection = document.getElementById('aboutMe');
+            const projectsSection = document.getElementById('projects');
             if (projectsSection) {
                 projectsSection.scrollIntoView({ behavior: 'smooth' });
             }

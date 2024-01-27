@@ -11,51 +11,50 @@
     background-color: #E60023;
     height: 40px;
 }
+
 .nav-links {
-    display: flex; /* Add flex display */
-    align-items: center; /* Align items vertically */
-    flex-wrap: nowrap; /* Prevent wrapping */
+    display: flex; 
+    align-items: center; 
+    flex-wrap: nowrap;
 }
+
 .nav-links a {
     text-decoration: none;
     color: black;
     margin: 0 10px;
-    justify-content: space-between;
 }
-
-.nav-links.hide {
-    display: none;
-}
-
-.nav-links.show {
-    display: block;
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    width: 100%;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-/* Styles for smaller screens */
-/* @media (max-width: 768px) {
-    .nav-links a {
-        display: block;
-        margin: 10px 0;
-    }
-} */
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide links on smaller screens */
+        display: none; /* Initially hide links on smaller screens */
     }
 
     .nav-links.show {
-        display: flex; /* Show them only when 'show' class is added */
-        flex-direction: column;
-        /* Other styling as needed */
+        display: block; /* Use block layout for the links */
+        position: fixed; /* Fixed position */
+        top: 60px; /* Position it below the navbar */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: #E60023; /* Background color */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Box shadow for depth */
+        z-index: 1001; /* Ensure it's above other content */
+    }
+
+    .nav-links a {
+        display: block; /* Block display for each link */
+        padding: 15px 20px; /* Padding for each link */
+        color:black;
+        text-decoration: none; /* No underline */
+        border-bottom: 1px solid #fff; /* Separator between links */
+        text-align: left; /* Align text to the left */
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none; /* No border for the last item */
     }
 }
+
+
 
 /* Hide hamburger icon on larger screens */
 @media (min-width: 769px) {
@@ -63,5 +62,3 @@
         display: none;
     }
 }
-
-

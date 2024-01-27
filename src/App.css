@@ -13,10 +13,14 @@
   /* min-width: 100vw; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.section-separator {
+  width: 80%;
+  border-bottom: 3px solid #dddbdb; /* Light line */
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin: 0 auto; /* Center the separator */
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -48,6 +52,11 @@
   }
 }
 
+
+.section {
+  scroll-snap-align: start; /* each section snaps to the start of the container */
+  height: 100vh; /* height of each section */
+}
 .App .skills-section {
   text-align: center;
   padding: 20px;
