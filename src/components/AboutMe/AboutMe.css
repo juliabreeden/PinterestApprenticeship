@@ -16,12 +16,23 @@ h2 {
     padding-top: 50px;
     background-color: #E60023;
     color: #fff;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.aboutMe-photo {
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    display: block; 
+    margin: auto; 
 }
 
 
 
 .aboutMe-paragraph {
+    margin-top: 50px;
     max-width: 800px; 
     margin: auto; 
     font-size: 1.1em; 
@@ -29,7 +40,7 @@ h2 {
 }
 
 .aboutMe-paragraph h2 {
-    margin-bottom: 30px; 
+    margin-bottom: 25px; 
     font-size: 2em; 
 }
 
@@ -44,8 +55,36 @@ h2 {
     animation-delay: 2s; 
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .aboutMe-paragraph {
+        padding: 0 20px; 
+    }
+} */
+
+.aboutMe-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; /* Center content horizontally */
+    max-width: 1200px;
+    margin: auto; 
+    padding-top: 50px;
+}
+
+.aboutMe-photo-container {
+    flex: 0 0 200px; /* Flex basis of 200px for the photo container */
+    padding-right: 20px; /* Spacing between photo and text */
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe-content {
+        flex-direction: column; 
+    }
+    .aboutMe-photo-container {
+        padding-bottom: 15px; 
+        padding-top: 4px;
+    }
+    .aboutMe-paragraph {
+        font-size: smaller;
         padding: 0 20px; 
     }
 }

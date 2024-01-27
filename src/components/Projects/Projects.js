@@ -30,7 +30,7 @@ const projectData = [
         title: 'BeakBook',
         summary: 'Web app to identify and log bird sightings',
         image: beakbookImage,
-        details: 'I was motivated to create this application as a digital alternative to the physical bird tracking journal I keep. It\'s a project that combines my technical skills with my love for little avian friends. Users can record detailed sightings, including species, location, date, and time, and the activity they spotted the bird doing. It features this bird sightings journal, robust user authentication, MongoDB database storage, a responsive design, and an AI-powered bird identification tool. It\'s built for everyone - from those just starting their birdwatching journey to experienced birders looking to track and share their sightings.'
+        details: 'I was motivated to create this application as a digital alternative to the physical bird tracking journal I keep. It\'s a project that combines my technical skills with my love for little avian friends. Users can record detailed sightings, including species, location, date, and time, and the activity they spotted the bird doing. It features this bird sightings journal, user authentication, MongoDB database storage, a responsive design, and an AI-powered bird identification tool. It\'s built for everyone - from those just starting their birdwatching journey to experienced birders looking to track and share their sightings.'
 
     },
     {
