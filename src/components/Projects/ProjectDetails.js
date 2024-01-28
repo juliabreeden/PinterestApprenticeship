@@ -46,8 +46,8 @@ const ProjectDetails = () => {
                 <h2>{project.title}</h2>
                 <p style={{margin: '50px'}}dangerouslySetInnerHTML={createMarkup(project.details)}></p>
                 <div className="custom-link-container">
-                {project.customMessage && project.customLink && (
-                    <p>{project.customMessage} <a href={project.customLink} target="_blank" rel="noopener noreferrer">here</a>.</p>
+                {project.customMessage && project.link && (
+                    <p>{project.customMessage} <a href={project.link} target="_blank" rel="noopener noreferrer">here</a>.</p>
                 )}
                     </div>
             </div>

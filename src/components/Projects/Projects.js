@@ -42,7 +42,7 @@ const projectData = [
         summary: 'Web app to connect outdoor enthusiasts',
         image: campConnectImage,
         details: 'In collaboration with three fellow engineers, we created Campfire Connect for outdoor enthusiasts to safely enjoy nature together. My contributions centered on enhancing security and authentication. I fortified our platform using bcrypt for data encryption, integrated JWTs for secure sessions (displayed in the gif below), and added protective middleware, ensuring robust user privacy and trust. I was also responsible for integrating Webpack for better scalability and faster load times, incorporating features like hot module reloading and ES6+ transpilation. I built the Node.js/Express backend, designing a RESTful architecture that streamlined frontend-backend communication and reduced CORS issues, improving overall app functionality and user experience. <br><br> Campfire Connect reflects our commitment to connecting nature lovers through a secure, efficient, and user-friendly platform.',
-        customMessage: 'Check out the branch "Julia" on GitHub ',
+        customMessage: 'Check out the branch \'julia\' on GitHub ',
         link: 'https://github.com/juliabreeden/adventure-connect'
 
        
