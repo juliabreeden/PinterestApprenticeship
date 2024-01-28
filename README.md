@@ -2,7 +2,7 @@
 
 ## Welcome to My Portfolio!
 
-Hello! I'm Julia, a passionate and dedicated individual seeking to join the Pinterest team. I built this site using React, and it is a personal showcase of my journey, skills, and the reasons I believe I'd be an excellent fit for the Pinterest Engineering Apprenticeship.
+Hello! I'm Julia, a passionate and dedicated individual seeking to join the Pinterest team. I built this website using React, and it is a personal showcase of my journey, skills, and the reasons I believe I'd be an excellent fit for the Pinterest Engineering Apprenticeship.
 
 ### Features of My Portfolio:
 
@@ -16,4 +16,4 @@ Hello! I'm Julia, a passionate and dedicated individual seeking to join the Pint
 
 ## Getting in Touch
 
-Feel free to reach out to me through the contact information provided on the site. I am open to discussing my projects, experiences, and the potential to contribute to Pinterest's dynamic team.
+Feel free to reach out to me through the contact information provided on the website. I would love to discuss my projects, experiences, and my potential to contribute to the dynamic and imaginative Pinterest team.
