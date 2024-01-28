@@ -1,17 +1,25 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import './AboutMe.css';
 import photo from './juliapic 2.jpg';
 
 const AboutMe = () => {
-    const [fadeIn, setFadeIn] = useState(false);
+    // const [isVisible, setIsVisible] = useState(false);
 
+    // const handleScroll = () => {
+    //     const aboutMeTop = document.getElementById('aboutMe').offsetTop;
+    //     const scrollPosition = window.scrollY + window.innerHeight;
+    //     if (scrollPosition > aboutMeTop) {
+    //         setIsVisible(true);
+    //     }
+    // };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setFadeIn(true);
-        }, 2000); 
-        return () => clearTimeout(timer);
-    }, []);
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll);
+
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
 
     return (
@@ -27,7 +35,7 @@ const AboutMe = () => {
                 <p>I deeply value being part of communities that prioritize creativity and positivity, just like Pinterest.</p>
                 <p style={{fontWeight: 'bold'}}>So, I've made this site to convince you to select me as a Pinterest Apprentice...
                 </p>
-                <p className={fadeIn ? "fade-in-text" : ""} style={{fontWeight: 'bold'}}>
+                <p style={{fontWeight: 'bold'}}>
                 Is it working yet?</p>
             </div>
         </div>

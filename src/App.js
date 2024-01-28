@@ -36,7 +36,8 @@ function App() {
             <>
         <Intro />
         <AboutMe id="aboutMe"/>
-        <Projects id="projects"/>
+        <div id="projects"></div>
+        <Projects/>
     <div className="section-separator"></div>
               <WhyMe id="why-me"/>
               <div className="section-separator"></div>

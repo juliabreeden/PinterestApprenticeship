@@ -22,15 +22,18 @@ const projectData = [
         title: 'ApolloMatic',
         summary: 'Open source GraphQL developer tool',
         image: apollomaticImage,
-        details: 'This was develolped with a team of 3 phenomenal engineers under tech accelerator OS Labs. My team and I arrived at the idea for this project as a result of our learning journey into GraphQL. I was interested in alternatives to REST APIs and was fascinated with GraphQL and its efficiency in allowing clients to only fetch the exact data needed. \nWe quickly realized that when using GraphQL (the Apollo framework in our case) with MongoDB, fetching data and navigating schemas can become complex very quickly and requires advanced mapping if the GraphQL schema does not perfectly match the alignment of the MongoDB schema.\n To address this, we created the ApolloMatic library as an open source tool to streamline developer\'s experiences using GraphQL with MongoDB by parsing user files, reading MongoDB schema trees and transforming them into maching GraphQL types, resolvers, mutations, and queries.\n Apollomatic is easy to configure and available for download on the npm registry!'
-      
+        details: 'This was develolped with a team of 3 phenomenal engineers under tech accelerator OS Labs. My team and I arrived at the idea for this project as a result of our learning journey into GraphQL. I was interested in alternatives to REST APIs and was fascinated with GraphQL and its efficiency in allowing clients to only fetch the exact data needed. \nWe quickly realized that when using GraphQL (the Apollo framework in our case) with MongoDB, fetching data and navigating schemas can become complex very quickly and requires advanced mapping if the GraphQL schema does not perfectly match the alignment of the MongoDB schema.\n To address this, we created the ApolloMatic library as an open source tool to streamline developer\'s experiences using GraphQL with MongoDB by parsing user files, reading MongoDB schema trees and transforming them into maching GraphQL types, resolvers, mutations, and queries.\n Apollomatic is easy to configure and has over 200 downloads so far!',
+        customMessage: 'Check it out on the npm registry ',
+        link: 'https://www.npmjs.com/package/apollomatic',
     },
     {
         id: 'BeakBook',
         title: 'BeakBook',
         summary: 'Web app to identify and log bird sightings',
         image: beakbookImage,
-        details: 'I was motivated to create this application as a digital alternative to the physical bird tracking journal I keep. It\'s a project that combines my technical skills with my love for little avian friends. Users can record detailed sightings, including species, location, date, and time, and the activity they spotted the bird doing. It features this bird sightings journal, user authentication, MongoDB database storage, a responsive design, and an AI-powered bird identification tool. It\'s built for everyone - from those just starting their birdwatching journey to experienced birders looking to track and share their sightings.'
+        details: 'I was motivated to create this application as a digital alternative to the physical bird tracking journal I keep. It\'s a project that combines my technical skills with my love for little avian friends. Users can record detailed sightings, including species, location, date, and time, and the activity they spotted the bird doing. It features this bird sightings journal, user authentication, MongoDB database storage, a responsive design, and an AI-powered bird identification tool. It\'s built for everyone - from those just starting their birdwatching journey to experienced birders looking to track and share their sightings.',
+        customMessage: 'Check out the GitHub repo ',
+        link: 'https://github.com/juliabreeden/BeakBook'
 
     },
     {
@@ -38,7 +41,9 @@ const projectData = [
         title: 'Campfire Connect',
         summary: 'Web app to connect outdoor enthusiasts',
         image: campConnectImage,
-        details: 'In collaboration with three fellow engineers, we created Campfire Connect for outdoor enthusiasts to safely enjoy nature together. My contributions centered on enhancing security and authentication. I fortified our platform using bcrypt for data encryption, integrated JWTs for secure sessions (displayed in the gif below), and added protective middleware, ensuring robust user privacy and trust. I was also responsible for integrating Webpack for better scalability and faster load times, incorporating features like hot module reloading and ES6+ transpilation. I built the Node.js/Express backend, designing a RESTful architecture that streamlined frontend-backend communication and reduced CORS issues, improving overall app functionality and user experience. <br><br> Campfire Connect reflects our commitment to connecting nature lovers through a secure, efficient, and user-friendly platform.'
+        details: 'In collaboration with three fellow engineers, we created Campfire Connect for outdoor enthusiasts to safely enjoy nature together. My contributions centered on enhancing security and authentication. I fortified our platform using bcrypt for data encryption, integrated JWTs for secure sessions (displayed in the gif below), and added protective middleware, ensuring robust user privacy and trust. I was also responsible for integrating Webpack for better scalability and faster load times, incorporating features like hot module reloading and ES6+ transpilation. I built the Node.js/Express backend, designing a RESTful architecture that streamlined frontend-backend communication and reduced CORS issues, improving overall app functionality and user experience. <br><br> Campfire Connect reflects our commitment to connecting nature lovers through a secure, efficient, and user-friendly platform.',
+        customMessage: 'Check out the branch "Julia" on GitHub ',
+        link: 'https://github.com/juliabreeden/adventure-connect'
 
        
     },
@@ -66,8 +71,8 @@ const projectData = [
 
     return (
         <>
-          <h2 className="projects-heading">My Projects</h2>
-          <div id="projects" 
+          <h2 className="projects-heading">Here is some of my work:</h2>
+          <div 
         className="projects-container">
             {projectData.map((project) => (
                 <div

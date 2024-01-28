@@ -13,6 +13,10 @@
   /* min-width: 100vw; */
 }
 
+body, .App {
+  margin: 0;
+  padding: 0;
+}
 
 .section-separator {
   width: 80%;
