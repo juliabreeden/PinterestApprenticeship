@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Julia Breeden - Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Welcome to My Portfolio!
 
-## Available Scripts
+Hello! I'm Julia, a passionate and dedicated individual seeking to join the Pinterest team. I built this website using React, and it is a personal showcase of my journey, skills, and the reasons I believe I'd be an excellent fit for the Pinterest Engineering Apprenticeship.
 
-In the project directory, you can run:
+### Features of My Portfolio:
 
-### `npm start`
+- **About Me**: A brief introduction to who I am, my background, and what drives me in the tech world.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Projects Showcase**: A curated list of my projects, demonstrating my skills in web development and programming. Each project includes a detailed description, technologies used, and my role in its development.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Why Me**: In this section, I delve into why I am passionate about joining Pinterest as an apprentice and the reasons I believe I am a strong candidate. I discuss how Pinterest's innovative and inspirational culture aligns with my own values and how I can contribute to the company's mission success. This includes my perspectives on learning, collaboration, and the importance of technology as a force for inspiration and imagination.
 
-### `npm test`
+- **Tech Talk Spotlight**: A highlight of a recent tech talk I gave, which showcases my ability to communicate complex technical ideas effectively. This section includes a link to the talk and a brief overview of the topics covered.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting in Touch
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out to me through the contact information provided on the website. I would love to discuss my projects, experiences, and my potential to contribute to the dynamic and imaginative Pinterest team.
