@@ -1,11 +1,12 @@
-import React from 'react';
+
 import { useNavigate, useLocation } from 'react-router-dom';
 import "./Projects.css";
 import { useEffect } from 'react';
 import gif1 from './apollomatic1.gif';
 import gif2 from './apollotest.gif';
 import gif3 from './adenture-connect-demo.gif';
-import gif4 from './beakbook.gif';
+// import gif4 from './beakbook.gif';
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 const ProjectDetails = () => {
 
@@ -33,16 +34,24 @@ const ProjectDetails = () => {
         return {__html: htmlString};
     };
 
+    const imageCount = project.id === 'ApolloMatic' ? 2 : 1;
 
     return (
         <div className='project-details-container'>
-            <button onClick={goBack}>&lt; Back</button>
+            <button onClick={goBack}>
+            <IoMdArrowRoundBack className="back-icon" />
+            </button>
             <div className='project-text'>
                 {/* Project text content here */}
                 <h2>{project.title}</h2>
-                <p dangerouslySetInnerHTML={createMarkup(project.details)}></p>
+                <p style={{margin: '50px'}}dangerouslySetInnerHTML={createMarkup(project.details)}></p>
+                <div className="custom-link-container">
+                {project.customMessage && project.link && (
+                    <p>{project.customMessage} <a href={project.link} target="_blank" rel="noopener noreferrer">here</a>.</p>
+                )}
+                    </div>
             </div>
-            <div className='project-images'>
+            <div className={`project-images ${imageCount === 1 ? "single-image" : ""}`}>
                 {project.id === 'ApolloMatic' ? (
                     <>
                         <img src={gif1} alt="ApolloMatic Demo 1" className="project-image" />
@@ -67,7 +76,5 @@ const ProjectDetails = () => {
     
     
 };
-
-
 
 export default ProjectDetails;
