@@ -18,3 +18,18 @@
     line-height: 1.9;
     margin: auto;
 }
+
+.email-container {
+    /* background: #fff;
+    border-radius: 15px;
+    color: black;
+    padding: 20 30px;
+    margin: 10 300 300 10px; */
+    margin-top: 20px;
+}
+
+.email-container a {
+    color: #89CFF0;
+    font-weight: bold;
+}
+
